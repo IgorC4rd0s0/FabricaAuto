@@ -13,6 +13,7 @@ public class App {
         Automovel a2 = new Automovel()
 
         a2.setPlaca(hea-6464);
+        a2.setCor(preto);
 
         Carro c1 = new Carro(true, true);
         c1.setModelo("Celta");
