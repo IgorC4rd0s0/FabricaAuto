@@ -9,12 +9,29 @@ public class Automovel {
     private Boolean ligado;
     private Boolean movimento;
     
+    
     public String ligar () {
         if (this.ligado) {
             return "O veiculo" + this.modelo + "já esta ligado.";
         }
         this.ligado = true;
         return "O veiculo" + this.modelo + "foi ligado.";
+    }
+
+    public String mover () {
+        if (this.ligado) {
+            return "O veiculo esta em movimento";
+        }
+        this.ligado = false;
+        return "o veiculo deve ser ligado para entrar em movimento";
+    }
+    
+    public String parado () {
+        if (this.movimento) {
+          return  "o veiculo nao deve estar em movimento";
+        }
+        this.movimento = false;
+        return "o veiculo se encontra parado";
     }
     
     
@@ -26,6 +43,7 @@ public class Automovel {
         this.ligado = ligado;
         this.movimento = movimento;
     }
+        
     
 
     public Automovel() {

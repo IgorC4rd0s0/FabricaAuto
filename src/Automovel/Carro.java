@@ -1,16 +1,26 @@
 package Automovel;
 public class Carro extends Automovel {
     private Boolean tetoSolar;
-    private Boolean aberto;    
+    private Boolean aberto;
+    private Boolean portaAberta;   
     
 
     public Carro () {
         super();
     }
 
-    public Carro(Boolean tetoSolar, Boolean aberto) {
+    public Carro(Boolean tetoSolar, Boolean aberto, Boolean portaAberta) {
         this.tetoSolar = tetoSolar;
         this.aberto = aberto;
+        this.portaAberta = portaAberta;        
+    }
+
+    public String abrirFechar () {
+        if (this.portaAberta) {
+            return "Carro fechado";
+        }
+        this.portaAberta = false;
+        return "Carro aberto";
     }
 
     public Boolean isTetoSolar() {
@@ -35,5 +45,13 @@ public class Carro extends Automovel {
 
     public void setAberto(Boolean aberto) {
         this.aberto = aberto;
+    }
+    
+    public Boolean getportaAberta() {
+        return this.portaAberta;
+    }
+
+    public void setportaAberta(Boolean portaAberta) {
+        this.portaAberta = portaAberta;
     }
 }

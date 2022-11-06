@@ -9,17 +9,14 @@ public class App {
         a1.setCor("branco");
         a1.setPlaca("hmx-4341");
         a1.setLigado(false);
-        a1.setMovimento(false);
-        Automovel a2 = new Automovel()
 
-        a2.setPlaca(hea-6464);
-        a2.setCor(preto);
-
-        Carro c1 = new Carro(true, true);
+        Carro c1 = new Carro(true, true, null);
         c1.setModelo("Celta");
         c1.setLigado(false);
-
-        System.out.println(c1.getModelo());
-        System.out.println(c1.ligar());
+        c1.setMovimento(false);
+        c1.setportaAberta(false);        
+        
+        System.out.println(c1.abrirFechar());
+        
     }
 }
