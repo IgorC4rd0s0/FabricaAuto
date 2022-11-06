@@ -14,9 +14,14 @@ public class App {
         c1.setModelo("Celta");
         c1.setLigado(false);
         c1.setMovimento(false);
-        c1.setportaAberta(false);        
+        c1.setportaAberta(false);
         
-        System.out.println(c1.abrirFechar());
+        Moto m1 = new Moto(null, null, null);
+        m1.setAlarme(true);
+        m1.setBau(true);
+        m1.setFreioAbs(true);
+        
+        System.out.println(m1.alarme());
         
     }
 }

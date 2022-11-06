@@ -3,15 +3,21 @@ package Automovel;
 public class Moto extends Automovel {
 
 private Boolean freioAbs;
-private Boolean bau; 
+private Boolean bau;
+private Boolean alarme; 
 
-public Moto () {
-    super();
-}
-
-    public Moto(Boolean freioAbs, Boolean bau) {
+    public Moto(Boolean freioAbs, Boolean bau, Boolean alarme) {
         this.freioAbs = freioAbs;
         this.bau = bau;
+        this.alarme = alarme;
+    }
+
+    public String alarme () {
+        if (this.alarme) {
+            return "alarme ligado";
+        }
+        this.alarme = false;
+        return "O alarme esta desligado";
     }
 
     public Boolean isFreioAbs() {
@@ -36,6 +42,18 @@ public Moto () {
 
     public void setBau(Boolean bau) {
         this.bau = bau;
+    }
+
+    public Boolean isAlarme() {
+        return this.alarme;
+    }
+
+    public Boolean getAlarme() {
+        return this.alarme;
+    }
+
+    public void setAlarme(Boolean alarme) {
+        this.alarme = alarme;
     }
 
 
