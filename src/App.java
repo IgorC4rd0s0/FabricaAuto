@@ -10,6 +10,9 @@ public class App {
         a1.setPlaca("hmx-4341");
         a1.setLigado(false);
         a1.setMovimento(false);
+        Automovel a2 = new Automovel()
+
+        a2.setPlaca(hea-6464);
 
         Carro c1 = new Carro(true, true);
         c1.setModelo("Celta");
